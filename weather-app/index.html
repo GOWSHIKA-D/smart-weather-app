@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project 4: Smart Weather Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>🌍 Smart Weather Finder</h2>
+    <select id="stateSelect">
+      <option value="">Select State</option>
+      <option value="Tamil Nadu">Tamil Nadu</option>
+      <option value="Karnataka">Karnataka</option>
+      <option value="Kerala">Kerala</option>
+      <option value="Maharashtra">Maharashtra</option>
+      <option value="Andhra Pradesh">Andhra Pradesh</option>
+    </select>
+    <input type="text" id="districtInput" placeholder="Enter District or City" />
+    <button onclick="fetchWeather()">Get Weather</button>
+    <div class="weather-box" id="weatherBox"></div>
+    <div class="error" id="errorBox">❌ Location not found!</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
